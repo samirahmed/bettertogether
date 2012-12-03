@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GitHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="At attempt to work at GitHub.">
+    <meta name="author" content="Garen J. Torikian">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="./css/overrides.css" rel="stylesheet">
+  </head>
+
+  <body data-spy="scroll" data-target=".toc">
+
+    <header class="jumbotron subhead" id="overview">
+      <div class="container">
+        <h1>GitHub, I <span class="love">❤</span> You</h1>
+        <p class="lead">But you've got issues. And I want to help you fix them.</p>
+      </div>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3 toc">
+          <ul class="nav nav-list toc-sidenav affix-top">
+              <li class="active"><a href="#localization">Localization</a></li>
+              <li><a href="#cla">Support for CLAs</a></li>
+              <li><a href="#labels">Labels for Notifications</a></li>
+              <li><a href="#fork">Rework the Network Graph</a></li>
+              <li class="nav-header">The Minor Niggles</li>
+              <li><a href="#ace">Revamp Inline Ace Edits</a></li>
+              <li><a href="#discovering">Discovering Nearby Projects</a></li>
+              <li><a href="#documentation">Autogenerate API Documentation</a></li>
+              <li><a href="#newsfeed">Non-Infinite Newsfeed</a></li>
+              <li class="nav-header">Etcetera</li>
+              <li><a href="#about">About</a></li>
+              <li><a href="https://www.github.com/gjtorikian/">Fork Source</a></li>
+          </ul>
+        </div>
+        <div class="span9">
+          <section id="localization">
+            <div class="page-header">
+              <h1>Localization</h1>
+            </div>
+            <p>Ruby came from Japan. Lua came from Brazil. Python came from the Netherlands.</p>
+            <p>Part of your responsibility as a major organization is to provide easy entry to services for speakers of any language. <strong>You will rarely hear that English is the <em>lingua franca</em> of programming from a non-native English speaker.</strong></p>
+            <p>You wouldn't triumph a single programming language as a tool for every problem; similarly, you wouldn't hearld a single spoken language as the means for learning how to code, or use git, or share your ideas.</p>
+            <div id="l10nCarousel" class="carousel slide">
+
+              <!-- Carousel items -->
+              <div class="carousel-inner">
+                <div class="active item"><img src="http://twitter.github.com/bootstrap/assets/img/bootstrap-mdo-sfmoma-01.jpg" /></div>
+                <div class="item"><img src="http://twitter.github.com/bootstrap/assets/img/bootstrap-mdo-sfmoma-01.jpg" /></div>
+                <div class="item"><img src="http://twitter.github.com/bootstrap/assets/img/bootstrap-mdo-sfmoma-01.jpg" /></div>
+              </div>
+
+              <!-- Carousel nav -->
+              <a class="carousel-control left" href="#l10nCarousel" data-slide="prev">&lsaquo;</a>
+              <a class="carousel-control right" href="#l10nCarousel" data-slide="next">&rsaquo;</a>
+           
+            </div>
+          </section>
+          <section id="cla">
+            <div class="page-header">
+              <h1>Support for CLAs</h1>
+            </div>
+            <p>Recently, you introduced <a href="https://github.com/blog/1184-contributing-guidelines" target="_blank">support for providing guidelines for contributions</a>. This lowers the barrier for pull requests, and also ensures that every new submission to a repo is consistent, clean, and at a high standard.</p>
+            <p>You should provide a way for organizations to manage their Contributor License Agreement. Too often, CLAs are handled by users "signing" and emailing PDFs to a repo organizer, who then adds their name to a spreadsheet. Contributors are harrangued about whether "they've signed the CLA yet." Sometimes, submitters that send in a top-notch pull request drop off the face of the earth, leaving the code unmerged (and in a legal quagmire!).</p>
+            <p><strong>Adminsitrators of organizations should be visually notified within the pull request  whether the submitter has signed a CLA.</strong> The user making the pull request should know that as part of the pull request process, they're abiding by the CLA.</p>
+          </section>
+
+          <section id="labels">
+            <div class="page-header">
+              <h1>Labels for Notifications</h1>
+            </div>
+            <p><a href="https://twitter.com/gjtorikian/status/224260540283891712" target="_blank">I've complained about the old notification system for awhile</a>. The new updates are simple, concise, and I like being able to keep track of every contribution and repo made by other members of my organization.</p>
+            <div class="media">
+              <a class="pull-right">
+                <img class="media-object" src="./img/notifications_blackhole_min.png">
+              </a>
+              <div class="media-body">
+                <p>There's just one problem: any time I click on a notification, it's instantly marked as read, and tucked away into an "All notifications" black hole.</p>
+                
+                <p>If I need to refer to a notificaiton I read, I can't really easily find it. I can't search through my notifications. I can't tag my notifications the same way I can tag my issues. Heck, if an issue is tagged, and I'm being notified about it, I should be able to at least see the tag in my Notifications Center without opening it up.</p>
+              
+                <p><strong>Notifications should be more like email. If I click on a notification, it shouldn't disappear.</strong> It should go away when I tell it to&mdash;sort of like archiving it. If I want to sort my notifications by labels, let me do so.</p>
+              </div>
+            </div>
+            <p>If you don't want to make notifications like email messages, that's totally fine. But please <a href="https://github.com/blog/967-github-secrets" target="_blank">publicize the email address rules</a> in a format outside of a blog post.</p>
+          </section>
+
+          <section id="fork">
+            <div class="page-header">
+              <h1>Rework the Network Graph</h1>
+            </div>
+            <p>The Network Graph of forks is really awesome. I've used it several times to see what other contributions developers have made to a code base.</p>
+            <p><a href="https://github.com/chjj/marked" target="_blank">chjj's marked repo</a> is a good example of the usefulness of the Network Graph. It's a JavaScript implementation of the GitHub-Flavored-Markdown. Let's say a user wants definition list support, similar to <a href="http://michelf.ca/projects/php-markdown/extra/#def-list" target="_blank">PHP Markdown Extra</a>. But chjj doesn't want to implement that. That's completely fine; another user forks his project and implements the change. I can then browse other forks and decide which feature I want and need and use those implementations. It's a wonderful example of open-source development.</p>
+            <p><strong>There are just a few problems with the graph as it stands</strong>:
+              <ol>
+                <li>Consider highlighting commits or forks that implement features the main repository does not want. For example, if <code>#31</code> automatically links to a repo's issue #31, perhaps some other format could link to a forked repo (and highlight it on the original repo)</li>
+                <li>Get rid of <a href="https://github.com/chjj/marked/pull/74#issuecomment-9252246" target="_blank">useless "+1" comments</a> by adding a "thumbs up" counter. Allow for the ability to completely close threads; if the author doesn't want to implement the feature, it should be made abundently clear. <a href="http://zachholman.com/posts/shit-work/" target="_blank">Don't make the users do shit work</a> by endlessly justifying their programming decisions or assuaging the frustrations of their userbase.</li>
+                <li>Navigation on the Network Graph is a painful experience, the least problematic of which being that the up-and-down arrow keys often interfere with the browser's scroll bar.</li>
+              </ol>
+            </p>
+          </section>
+
+          <section id="ace">
+            <div class="page-header">
+              <h1>Revamp Inline Ace Edits</h1>
+            </div>
+            <p>You're using Ace to provide inline edits to files. Terrific! <a href="https://www.github.com/ajaxorg/ace" target="_blank">Ace is an incredible online code editor</a>. <small>(Disclaimer: <a href="https://github.com/ajaxorg/ace/graphs/contributors" target="_blank">I contribute to Ace</a>.)</small></p>
+            <div class="media">
+              <a class="pull-right">
+                <img class="media-object" src="./img/inline_ace_min.png">
+              </a>
+              <div class="media-body">
+                <p>However, <strong>what is up with the horrendous white-on-black with minimal highlighting</strong>? The Ace editor is capable of so much more, on top of which, the color scheme is <em>really</em> unappealing. Why not provide the ability to set the themes, or improve the "Find" feature off of its default pop-up dialog mode?</p>
+
+                <p>For quick fixes, the inline editor is a wondeful tool, particularly in environments where git isn't installed on a machine (mobile phone, anyone?).</p>
+              </div>
+            </div>
+
+            
+          </section>
+
+          <section id="discovering">
+            <div class="page-header">
+              <h1>Discovering Nearby Projects</h1>
+            </div>
+            <p>You present yourself as a social coding site, and your contributions to open-source development cannot be stressed enough.</p>
+            <p>Why not go the extra step and <strong>provide a map of nearby developers</strong>? You know which languages I like to work in most; you can also know my location (if I choose to tell you). Perhaps you should also suggest nearby hu-mans for collaborative hacking?</p>
+            <p>I'm not proposing you pivot into Facebook for Nerds. But if me and three other people have forked the same repository, and we've all made pull requests for it, it's be nice to have the opportunity to hash out some more ideas in person.</p>
+          </section>
+
+          <section id="documentation">
+            <div class="page-header">
+              <h1>Autogenerate API Documentation</h1>
+            </div>
+            <p>Documentation, you neglected necessity of open-source. How everyone marvels at your wonders, how few contribute to your success.</p>
+            <p>It's tremendously easy to generate wikis and GitHub pages. I'd like to see you also <strong>make it tremendously easy to create API documentation</strong>. Nothing too fancy; just click a button, parse my repository, and provide a list of public classes and members. If I, the developer, want to provide further improvements, then it's my responsibility to do so. But if I just don't have the time, it becomes incredibly useful for anyone stumbling around to get a list of what my code can do.</p>
+            <p>This becomes incredibly relevant for languages with members spread across various files.</p>
+          </section>
+
+          <section id="newsfeed">
+            <div class="page-header">
+              <h1>Non-Infinite Newsfeed</h1>
+            </div>
+            <p>For some unknown reason, the newsfeed does not allow for infinite scorlling:</p>
+          </section>
+
+          <section id="about">
+            <div class="page-header">
+              <h1>About</h1>
+            </div>
+            <p>Why does this website exist? Because I want to help make GitHub awesomer.</p>
+            <p>There's no way, outside of campainging socially like this, to get opinions heard. I'm not Linus Torvalds; my rants will not change websites.</p>
+            <p>I'm absoloutely thrilled that every time I've contacted GitHub Support, I've gotten a human being to respond. Through this website, I hope to reroute to the correct channels, and get another human being to respond.</p>
+            <p>In case you're hiring, here's <a href="resume.html">my resume</a>.
+          </section>
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>This site is in no way affiliated with GitHub Inc., the Octocat&copy;, or any other entity. I'm just trying to help, please don't sue.</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script src="./js/ux.js"></script>
+
+  </body>
+</html>
