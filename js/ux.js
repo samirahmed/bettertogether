@@ -1,8 +1,4 @@
 $(document).ready(function() {
-	var isResume = /resume/.test(window.location.pathname);
-
-	$('.toc').scrollspy();
-	$('#navbar').scrollspy();
 
 	$('.toc-sidenav').affix({
 	  offset: {
@@ -13,6 +9,11 @@ $(document).ready(function() {
 
 	$(".scroll").click(function(event){		
 	    event.preventDefault();
-	    $('html,body').animate({scrollTop:$(this.hash).offset().top - (isResume ? 25 : 0) }, 500);
+	    $('html,body').animate({scrollTop:$(this.hash).offset().top }, 500);
+	});
+
+	$('.carousel').carousel({
+	  interval: 3500,
+	  pause: "hover"
 	});
 });
