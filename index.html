@@ -39,15 +39,19 @@
               <li class="start"><a class="scroll" href="#about">About</a></li>
               <li class="ending"><a class="scroll" href="https://github.com/letsmake/bettertogether">Fork Source</a></li>
           </ul>
+          <a href="http://news.ycombinator.com/submit" class="hn-share-button" data-title="Some Title" data-url="http://www.igvita.com/">Vote on HN</a>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-text="Let's make @GitHub better, together: http://letsmake.github.com/bettertogether/">Tweet</a>
+          <script type="text/javascript" src="http://www.reddit.com/static/button/button1.js&newwindow=1"></script>
+          <div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://letsmake.github.com/bettertogether/"></div>
         </div>
         <div class="span9">
           <section id="localization">
             <div class="page-header">
               <h1>Localization</h1>
             </div>
-            <p>Ruby came from Japan. Lua came from Brazil. Python came from the Netherlands.</p>
-            <p>Part of your responsibility as a major organization is to provide easy entry to services for speakers of any language. <strong class="hl">You will rarely hear that English is the <em>lingua franca</em> of programming from a non-native English speaker.</strong></p>
-            <p>You wouldn't triumph a single programming language as a tool for every problem; similarly, you wouldn't hearld a single spoken language as the means for learning how to code, or use git, or share your ideas.</p>
+            <p>Ruby came from Japan. Lua came from Brazil. Python came from Holland.</p>
+            <p>Part of your responsibility as a major organization is to provide easy entry to services for speakers of any language. <strong class="hl">You rarely hear that English is the <em>lingua franca</em> of programming&emdash;from a non-native English speaker.</strong></p>
+            <p>You wouldn't triumph a single programming language as a tool for every problem; similarly, you wouldn't herald a single spoken language as the means for learning how to code, or use git, or share your ideas.</p>
             <div id="l10nCarousel" class="carousel slide">
 
               <!-- Carousel items -->
@@ -77,17 +81,17 @@
             <div class="page-header">
               <h1>Labels for Notifications</h1>
             </div>
-            <p><a href="https://twitter.com/gjtorikian/status/224260540283891712" target="_blank">I've complained about the old notification system for awhile</a>. The new updates are simple, concise, and I like being able to keep track of every contribution and repo made by other members of my organization.</p>
+            <p><a href="https://twitter.com/gjtorikian/status/224260540283891712" target="_blank">I've complained about the old notification system for a long time</a>. The new updates simplify evertyhing, and I like being able to keep track of every contribution made by other developers.</p>
             <div class="media">
               <a class="pull-right">
                 <img class="media-object" src="./img/notifications_blackhole_min.png">
               </a>
               <div class="media-body">
                 <p>There's just one problem: any time I click on a notification, it's instantly marked as read, and tucked away into an "All notifications" black hole.</p>
-                
-                <p>If I need to refer to a notificaiton I read, I can't really easily find it. I can't search through my notifications. I can't tag my notifications the same way I can tag my issues. Heck, if an issue is tagged, and I'm being notified about it, I should be able to at least see the tag in my Notifications Center without opening it up.</p>
               
                 <p><strong class="hl">Notifications should be more like email. If I click on a notification, it shouldn't disappear.</strong> It should go away when I tell it to&mdash;sort of like archiving it. If I want to sort my notifications by labels, let me do so.</p>
+                
+                <p>If I need to refer to a notificaiton I read, I can't find it easily. I can't search through my notifications. I can't tag my notifications the same way I can tag my issues. Heck, if an issue is tagged, and I'm being notified about it, the tags don't even show up in my Notifications Center.</p>
               </div>
             </div>
             <p>If you don't want to make notifications like email messages, that's totally fine. But please <a href="https://github.com/blog/967-github-secrets" target="_blank">publicize the email address rules</a> in a format outside of a blog post.</p>
@@ -99,6 +103,11 @@
             </div>
             <p>The Network Graph of forks is really awesome. I've used it several times to see what other contributions developers have made to a code base.</p>
             <p><a href="https://github.com/chjj/marked" target="_blank">chjj's marked repo</a> is a good example of the usefulness of the Network Graph. It's a JavaScript implementation of the GitHub-Flavored-Markdown. Let's say a user wants definition list support, similar to <a href="http://michelf.ca/projects/php-markdown/extra/#def-list" target="_blank">PHP Markdown Extra</a>. But chjj doesn't want to implement that. That's completely fine; another user forks his project and implements the change. I can then browse other forks and decide which feature I want and need and use those implementations. It's a wonderful example of open-source development.</p>
+
+            <video width="1150" height="726" src="./video/marked_forks.mov" controls autobuffer> 
+              <p>You need a new browser to see this video.</p> 
+            </video>
+
             <p><strong class="hl">There are just a few usability issues with the graphs</strong>:
               <ol>
                 <li>Consider highlighting commits or forks that implement features the main repository does not want. For example, if <code>#31</code> automatically links to a repo's issue #31, perhaps some other format could link to a forked repo (and highlight it on the original repo)</li>
@@ -149,7 +158,11 @@
             <div class="page-header">
               <h1>Non-Infinite Newsfeed</h1>
             </div>
-            <p>For some unknown reason, the newsfeed does not allow for infinite scorlling:</p>
+            <p>For some reason, <strong class="hl">the newsfeed does not allow for infinite scrolling</strong>:</p>
+
+            <video width="628" height="406" src="./video/index_refresh.mov" controls autobuffer> 
+              <p>You need a new browser to see this video.</p> 
+            </video>
           </section>
 
           <section id="about">
@@ -187,6 +200,24 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
 
+    </script>
+    <script>
+        (function(d, t) {
+            var g = d.createElement(t),
+                s = d.getElementsByTagName(t)[0];
+            g.src = '//hnbutton.appspot.com/static/hn.min.js';
+            s.parentNode.insertBefore(g, s);
+        }(document, 'script'));
+    </script>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    <script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
     </script>
   </body>
 </html>
