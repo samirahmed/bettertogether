@@ -31,18 +31,18 @@
               <li><a class="scroll" href="#labels">Labels for Notifications</a></li>
               <li class="ending"><a class="scroll" href="#fork">Rework the Network Graph</a></li>
               <li class="nav-header">The Minor Niggles</li>
-              <li class="start"><a class="scroll" href="#ace">Revamp Inline Ace Edits</a></li>
+              <li class="start"><a class="scroll" href="#ace">Revamp Inline Ace Editing</a></li>
               <li><a class="scroll" href="#discovering">Discovering Nearby Projects</a></li>
-              <li><a class="scroll" href="#documentation">Autogenerate API Documentation</a></li>
+              <li><a class="scroll" href="#documentation">Autogenerate API Docs</a></li>
               <li class="ending"><a class="scroll" href="#newsfeed">Non-Infinite Newsfeed</a></li>
               <li class="nav-header">The Obligatory Etcetera</li>
               <li class="start"><a class="scroll" href="#about">About</a></li>
               <li class="ending"><a href="https://github.com/letsmake/bettertogether">View Source</a></li>
               <li>
                 <br />
-                <a href="http://news.ycombinator.com/submit" class="hn-share-button" data-title="Some Title" data-url="http://www.igvita.com/">Vote on HN</a>
+                <a href="http://news.ycombinator.com/submit" class="hn-share-button" data-title="Let's Make GitHub Better, Together" data-url="http://www.igvita.com/">Vote on HN</a>
                 <a href="https://twitter.com/share" class="twitter-share-button" data-text="Let's make @GitHub better, together: http://letsmake.github.com/bettertogether/">Tweet</a>
-                <script type="text/javascript" src="http://www.reddit.com/static/button/button1.js?newwindow=1"></script>
+                <script type="text/javascript" src="http://www.reddit.com/static/button/button1.js?newwindow=1">reddit_title="Let's make GitHub Better, Together"</script>
                 <div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://letsmake.github.com/bettertogether/"></div>
               </li>
           </ul>
@@ -119,7 +119,7 @@
               <ol>
                 <li>Consider highlighting commits or forks that implement features the main repository does not want. For example, if <code>#31</code> automatically links to a repo's issue #31, perhaps some other format could link to a forked repo (and highlight it on the original repo)</li>
                 <li>Get rid of <a href="https://github.com/chjj/marked/pull/74#issuecomment-9252246" target="_blank">useless "+1" comments</a> by adding a "thumbs up" counter.</li>
-                <li>Allow for the ability to completely close threads; if the author doesn't want to implement the feature, it should be made abundently clear. <a href="http://zachholman.com/posts/shit-work/" target="_blank">Don't make the users do shit work</a> by endlessly justifying their programming decisions or having to assuage the frustrations of their userbase.</li>
+                <li>Allow for the ability to completely close threads; if the author doesn't want to implement the feature, it should be made abundently clear. Don't make authors endlessly justify their programming decisions or having to assuage the frustrations of their userbase.</li>
                 <li>Navigation on the Network Graph is a painful experience, the least problematic of which being that the up-and-down arrow keys often interfere with the browser's scroll bar.</li>
               </ol>
             </p>
@@ -127,7 +127,7 @@
 
           <section id="ace">
             <div class="page-header">
-              <h1>Revamp Inline Ace Edits</h1>
+              <h1>Revamp Inline Editing</h1>
             </div>
             <p>You're using Ace to provide inline edits to files. Terrific! <a href="https://www.github.com/ajaxorg/ace" target="_blank">Ace is an incredible online code editor</a>. <small>(Disclaimer: <a href="https://github.com/ajaxorg/ace/graphs/contributors" target="_blank">I contribute to Ace</a>.)</small></p>
             <div class="media">
@@ -135,7 +135,8 @@
                 <img class="media-object" src="./img/inline_ace_min.png">
               </a>
               <div class="media-body">
-                <p class="center_media">However, <strong class="hl">what is up with the horrendous white-on-black with minimal highlighting</strong>? The Ace editor is capable of so much more, on top of which, the color scheme is <em>really</em> unappealing. Why not provide the ability to set the themes, or improve the "Find" feature off of its default pop-up dialog mode?</p>
+                <p class="center_media">However, <strong class="hl">what is up with the horrendous white-on-black with minimal highlighting</strong>? The color scheme is truly unappealing. Why not provide the ability to set the themes?</p>
+                <p>Also, the Ace editor is capable of <em>so much more</em>. Multiple cursors. A command line. Live linting. And at a minimum, you could improve the "Find" feature off of its default pop-up dialog.</p>
               </div>
             </div>
 
@@ -153,7 +154,7 @@
 
           <section id="documentation">
             <div class="page-header">
-              <h1>Autogenerate API Documentation</h1>
+              <h1>Autogenerate API Docs</h1>
             </div>
             <p>Documentation, you neglected necessity of open-source. How everyone marvels at your wonders, how few contribute to your success.</p>
             <p>It's tremendously easy to generate wikis and GitHub pages. I'd like to see you also <strong class="hl">make it tremendously easy to create API documentation</strong>. Nothing too fancy; just click a button, parse my repository, and provide a list of public classes and members. If I, the developer, want to provide further improvements, then it's my responsibility to do so. But if I just don't have the time, it becomes incredibly useful for anyone stumbling around to get a list of what my code can do.</p>
@@ -171,6 +172,8 @@
             </a>
             <div class="media-body">
               <p>For some reason, <strong class="hl">the newsfeed does not allow for infinite scrolling</strong>.</p>
+
+              <p>Most sites have infinite scrolling for homepage content. It's just <a href="http://www.infinite-scroll.com/" target="_blank">one of those "neat-o" web niceties circa 2004</a>.</p>
             </div>
           </div>
           </section>
@@ -182,8 +185,8 @@
             <p>Why does this website exist? Because I want to help make GitHub awesomer.</p>
             <p>There are few ways outside of social campaigns (like this one) to get opinions heard. I'm not Linus Torvalds; my rants will not change websites.</p>
             <p>I'm absolutely thrilled that every time I've contacted GitHub Support, I've gotten a human being to respond. Bothering them with these ideas didn't seem like the right channel. Through this website, I hope to get through to a real life human being.</p>
-            <p>I'd love to see GitHub make more things "open source" &mdash; list your planned features, list your bugs, open source more documentation.
-            <p>In case you're hiring, here's <a href="miadzin.org/resume" target="_blank">my resume</a>. I wasn't kidding about making you awesome, <em>together</em>.
+            <p>I'd love to see GitHub make more things "open source" &mdash; list your planned features, list your bugs, open up more documentation.
+            <p>In case you're hiring, here's <a href="http://www.miadzin.org/resume" target="_blank">my resume</a>. I wasn't kidding about making you better, <em>together</em>.
           </section>
         </div><!--/span-->
       </div><!--/row-->

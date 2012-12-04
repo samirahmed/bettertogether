@@ -9,7 +9,10 @@ $(document).ready(function() {
 
 	$(".scroll").click(function(event){		
 	    event.preventDefault();
-	    $('html,body').animate({scrollTop:$(this.hash).offset().top }, 500);
+	    var hash = $(this.hash).attr("id");
+	    $('html,body').animate({scrollTop:$(this.hash).offset().top }, 500, function() {
+			window.location.hash = hash;
+	    });
 	});
 
 	$('.carousel').carousel({
