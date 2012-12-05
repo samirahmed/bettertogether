@@ -2,7 +2,10 @@ strong.hl {
   background: #F9FDA2;
 }
 
-/* Main marketing message and sign up button */
+a.uparrow {
+  display: none;
+}
+
 .jumbotron {
   margin: 60px 0;
   text-align: center;
@@ -20,7 +23,6 @@ strong.hl {
   width: 228px;
   margin: 0px 0 0;
   padding: 0;
-  background-color: #fff;
 }
 .toc-sidenav > li > a {
   display: block;
@@ -55,9 +57,13 @@ ul.toc-sidenav li a:before {
   content: "⊙ ";
 }
 
-.video_container { 
-  width: 50%;
-  margin: 0px auto;
+code.hugz {
+  color: black;
+  border: none;
+  background: none;
+  top: -2px;
+  position: relative;
+  word-wrap: normal;
 }
 
 .center_media {
@@ -74,4 +80,112 @@ ul.toc-sidenav li a:before {
 .footer p {
   margin-bottom: 0;
   color: #777;
+}
+
+/* Tablet to desktop
+------------------------- */
+@media (min-width: 768px) and (max-width: 980px) {
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+  /* Widen masthead and social buttons to fill body padding */
+  .jumbotron {
+    margin-top: -20px; /* Offset bottom margin on .navbar */
+  }
+  /* Adjust sidenav width */
+  .toc-sidenav {
+    width: 166px;
+    margin-top: 20px;
+  }
+  .toc-sidenav.affix {
+    top: 0;
+  }
+}
+
+/* Tablet
+------------------------- */
+@media (max-width: 767px) {
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+
+  /* Widen masthead and social buttons to fill body padding */
+  .jumbotron {
+    padding: 40px 20px;
+    margin: -20px -20px -20px -20px;
+  }
+
+  /* Sidenav */
+  .toc-sidenav {
+    width: auto;
+    margin-bottom: 20px;
+  }
+  .toc-sidenav.affix {
+    position: static;
+    width: auto;
+    top: 0;
+  }
+
+  a.uparrow {
+    display: inline;
+    position: relative;
+    text-decoration: none;
+    top: -7px;
+  }
+
+  /* Unfloat the back to top link in footer */
+  .footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .footer p {
+    margin-bottom: 9px;
+  }
+}
+
+/* Landscape phones
+------------------------- */
+@media (max-width: 480px) {
+  /* Remove padding above jumbotron */
+  body {
+    padding-top: 0;
+  }
+
+  /* Change up some type stuff */
+  h2 small {
+    display: block;
+  }
+
+  /* Downsize the jumbotrons */
+  .jumbotron h1 {
+    font-size: 45px;
+  }
+  .jumbotron p,
+  .jumbotron .btn {
+    font-size: 18px;
+  }
+  .jumbotron .btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* center align subhead text like the masthead */
+  .subhead h1,
+  .subhead p {
+    text-align: center;
+  }
+
+  /* Tighten up footer */
+  .footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  /* Unfloat the back to top in footer to prevent odd text wrapping */
+  .footer .pull-right {
+    float: none;
+  }
 }
