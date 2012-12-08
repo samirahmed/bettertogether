@@ -84,7 +84,7 @@ code.hugz {
   background: none;
   top: -2px;
   position: relative;
-  word-wrap: normal;
+  white-space: nowrap;
 }
 
 .center_media {
