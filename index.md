@@ -18,7 +18,7 @@ GitHub Mac App can enter a bad state if sidebar is extended too far
 Gists that have zero stars have a broken link (404)
 ---------------------------------------------------
 
-<video controls src="./video/github_mac_app_resizing_bug.mov">
+<video controls src="./video/gist_zero_stars_leads_to_404.mov">
 
 **Fix:** When there are zero stars, link to <u>https://gist.github.com/`username`/`gist_id`/stars</u> rather than <u>https://gist.github.com/`username`/false</u>.
 
