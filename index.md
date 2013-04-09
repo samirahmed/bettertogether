@@ -32,4 +32,4 @@ Different defaults for indent settings all over the place
 
 **Fix:** Make consistent default values for indent mode and indent size.
 
-**Pro-level:** If your defaults aren't my preferred defaults, let me [override](https://github.com/shurcooL/preferences.content/blob/master/README.toml) your defaults in GitHub settings. Personally, I like tabs of size 4.
+**Pro-level:** If your defaults aren't my preferred values, please let me [override](https://github.com/shurcooL/preferences.content/blob/master/README.toml) the defaults in my GitHub settings. Personally, I like tabs of size 4.
