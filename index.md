@@ -1,6 +1,9 @@
 <title>Let's Make GitHub Better, Together</title>
 <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
-<style type="text/css">body { margin: 10px; background-color: lightgray; }</style>
+<style type="text/css">
+	body { margin: 10px; background-color: lightgray; }
+	h2 { margin-top: 40px; margin-bottom: 20px; }
+</style>
 
 GitHub, I <span class="love">❤</span> You Too
 =============================================
