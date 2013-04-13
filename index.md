@@ -4,6 +4,7 @@
 <style type="text/css">
 	body { margin: 10px; margin-bottom: 60px; background-color: lightgray; }
 	h2 { margin-top: 40px; margin-bottom: 20px; }
+	.love { color: red; }
 </style>
 
 GitHub, I <span class="love">❤</span> You Too
