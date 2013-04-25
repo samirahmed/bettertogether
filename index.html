@@ -2,33 +2,35 @@
 <meta charset="utf-8">
 <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
 <style type="text/css">
-	body { margin: 10px; margin-bottom: 60px; background-color: lightgray; }
-	h2 { margin-top: 40px; margin-bottom: 20px; }
-	.love { color: red; }
+    body { margin: 10px; margin-bottom: 60px; background-color: lightgray; }
+    h2 { margin-top: 40px; margin-bottom: 20px; }
+    .love { color: red; }
 </style></p>
 
+<div style="text-align: center;"><div style="text-align: left; display: inline-block;">
 <h1>GitHub, I <span class="love">❤</span> You Too</h1>
 
 <p>But you've got some issues. And I want to help you fix them.</p>
 
 <h2>GitHub Mac App can enter a bad state if sidebar is extended too far</h2>
 
-<p><div style="display: inline-block; background-color: white; box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.1); padding: 10px;"><video controls src="./video/github_mac_app_resizing_bug.mov"></div></p>
+<p><div style="display: inline-block; background-color: white; box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.1); padding: 10px;"><video controls src="./video/github_mac_app_resizing_bug.mov"></video></div></p>
 
 <p><strong>Fix:</strong> Set a limit on how far out the sidebar can extend, to avoid this problematic state from ever occurring.</p>
 
 <h2>Gists that have zero stars have a broken link (404)</h2>
 
-<p><div style="display: inline-block; background-color: white; box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.1); padding: 10px;"><video controls src="./video/gist_zero_stars_leads_to_404.mov"></div></p>
+<p><div style="display: inline-block; background-color: white; box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.1); padding: 10px;"><video controls src="./video/gist_zero_stars_leads_to_404.mov"></video></div></p>
 
 <p><strong>Fix:</strong> When there are zero stars, link to <u>https://gist.github.com/<code>username</code>/<code>gist_id</code>/stars</u> rather than <u>https://gist.github.com/<code>username</code>/false</u>.</p>
 
 <h2>Different defaults for indent settings all over the place</h2>
 
-<p><div style="display: inline-block; background-color: white; box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.1); padding: 10px;"><img src="./img/default_indent_settings_github.png" alt="" title=""></div></p>
+<p><div style="display: inline-block; background-color: white; box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.1); padding: 10px;"><img src="./img/default_indent_settings_github.png"></div></p>
 
-<p><div style="display: inline-block; background-color: white; box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.1); padding: 10px;"><img src="./img/default_indent_settings_gist.png" alt="" title=""></div></p>
+<p><div style="display: inline-block; background-color: white; box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.1); padding: 10px;"><img src="./img/default_indent_settings_gist.png"></div></p>
 
 <p><strong>Fix:</strong> Make consistent default values for indent mode and indent size.</p>
 
 <p><strong>Pro-level:</strong> If your defaults aren't my preferred values, please let me <a href="https://github.com/shurcooL/preferences.content/blob/master/README.toml">override</a> the defaults in my GitHub settings. Personally, I like tabs of size 4.</p>
+</div></div>
